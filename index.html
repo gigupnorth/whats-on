@@ -1,1 +1,73 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gig Up North</title>
+
+  <!-- Your styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sx.css">
+
+  <!-- Manifest for PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Optional: service worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('Service worker registered'))
+        .catch(err => console.error('Service worker failed:', err));
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Header / top bar -->
+  <header class="gun-header">
+    <div class="gun-title">
+      <span class="line1">gig up</span>
+      <span class="line2">north</span>
+    </div>
+    <img class="gun-logo" src="images/gun-logo.jpg" alt="Gig Up North logo">
+  </header>
+
+  <!-- Area filter buttons (we can implement functionality later) -->
+  <div class="area-key">
+    <span class="key" data-area="Darlo">Darlo</span>
+    <span class="key" data-area="Durham">Durham</span>
+    <span class="key" data-area="Middlesbrough">Middlesbrough</span>
+    <span class="key" data-area="Newcastle">Newcastle</span>
+    <span class="key" data-area="Sunderland">Sunderland</span>
+  </div>
+
+  <!-- View toggle buttons (cards / text) -->
+  <div class="view-toggle">
+    <button class="view-cards-btn active">CARDS view</button>
+    <button class="view-text-btn">TEXT view</button>
+  </div>
+
+  <!-- Main content -->
+  <main class="layout">
+    <section class="layout-right">
+      <!-- Cards container -->
+      <div id="cards-view" class="cards"></div>
+      <!-- Text view container -->
+      <div id="text-view"></div>
+    </section>
+  </main>
+
+  <!-- Bottom bar (pagination or other buttons) -->
+  <div class="bottom-bar">
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+  </div>
+
+  <!-- New script -->
+  <script src="script.js"></script>
+</body>
+</html>
