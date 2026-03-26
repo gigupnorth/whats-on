@@ -1,1 +1,29 @@
 
+[
+  {
+    "title": "The Electric Cats",
+    "venue": "Darlo Club",
+    "date": "2026-03-26",
+    "time": "20:00",
+    "price": "£15",
+    "area": "Darlo",
+    "subarea": "",
+    "infoLink": "https://example.com/info",
+    "ticketLink": "https://example.com/tickets",
+    "colour": "#ffcc00",
+    "extraInfo": "Supporting band: The Night Owls"
+  },
+  {
+    "title": "Synth Rebels",
+    "venue": "Newcastle Arena",
+    "date": "2026-03-27",
+    "time": "19:30",
+    "price": "£20",
+    "area": "Newcastle",
+    "subarea": "",
+    "infoLink": "https://example.com/info",
+    "ticketLink": "https://example.com/tickets",
+    "colour": "#00ccff",
+    "extraInfo": "Sold out in advance"
+  }
+]
